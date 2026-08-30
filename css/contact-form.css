@@ -20,3 +20,10 @@
     src: url('/css/fonts/HachiMaruPop/HachiMaruPop-Regular.ttf') format('truetype');
 }
 /*---------- coding the actual form format ----------*/
+fieldset {
+    padding: 10px;
+    margin: 10px;
+    outline: 3px dashed var(--Color-13);
+    border: 10px solid transparent;
+    border-image: repeating-linear-gradient(45deg, #ac446d, #f7b2ad 10px, #eaf1d6 10px, #eaf1d6 20px, #e9724c 20px, var(--Color-6) 30px) 1;
+}
