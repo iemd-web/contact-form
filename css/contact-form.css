@@ -1,29 +1,51 @@
 @font-face {
     font-family: 'Basiic pixel';
-    src: url('/css/fonts/basiic-font.ttf') format('truetype');
+    src: url('/contact-form/css/fonts/basiic-font.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Darumadrop One';
   font-style: NORMAL;
-  src: url('/css/fonts/Darumadrop_One/DarumadropOne-Regular.ttf') format('truetype');
+  src: url('/contact-form/css/fonts/Darumadrop_One/DarumadropOne-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Gaegu';
   font-style: normal;
   font-weight: REGULAR;
-  src: url('/css/fonts/Gaegu/Gaegu-Regular.ttf') format('truetype');
+  src: url('/contact-form/css/fonts/Gaegu/Gaegu-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Hachi Maru Pop';
     font-style: normal;
     font-weight: regular;
-    src: url('/css/fonts/HachiMaruPop/HachiMaruPop-Regular.ttf') format('truetype');
+    src: url('/contact-form/css/fonts/HachiMaruPop/HachiMaruPop-Regular.ttf') format('truetype');
 }
 /*---------- coding the actual form format ----------*/
-fieldset {
-    padding: 10px;
-    margin: 10px;
-    outline: 3px dashed var(--Color-13);
-    border: 10px solid transparent;
-    border-image: repeating-linear-gradient(45deg, #ac446d, #f7b2ad 10px, #eaf1d6 10px, #eaf1d6 20px, #e9724c 20px, var(--Color-6) 30px) 1;
+input {
+    display: inline-block;
+}
+input, textarea {
+    width:100%;
+    resize: vertical;
+
+    background-image: radial-gradient(circle, #fbf1f5 0%, #fcfcfc 100%);
+    border: 1px solid #333232;
+
+    border-radius: 3px;
+    padding: 5px 2px;
+    color: #333232;
+
+    font-family: Basiic;
+    font-size: 1.25rem;
+}
+body {
+    color:#e9724c;
+    font-family: Darumadrop One;
+    font-size: 1.5rem;
+}
+button {
+    padding: 5px;
+    background-color:#eaf3df;
+    color: #e9724c;
+    font-family: Basiic;
+    font-size: 1.25rem;
 }
