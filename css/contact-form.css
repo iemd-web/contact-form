@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Basiic pixel';
+    src: url('/css/fonts/basiic-font.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Darumadrop One';
+  font-style: NORMAL;
+  src: url('/css/fonts/Darumadrop_One/DarumadropOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Gaegu';
+  font-style: normal;
+  font-weight: REGULAR;
+  src: url('/css/fonts/Gaegu/Gaegu-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Hachi Maru Pop';
+    font-style: normal;
+    font-weight: regular;
+    src: url('/css/fonts/HachiMaruPop/HachiMaruPop-Regular.ttf') format('truetype');
+}
+/*---------- coding the actual form format ----------*/
