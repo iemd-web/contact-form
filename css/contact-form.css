@@ -27,25 +27,62 @@ input, textarea {
     width:100%;
     resize: vertical;
 
-    background-image: radial-gradient(circle, #fbf1f5 0%, #fcfcfc 100%);
-    border: 1px solid #333232;
+    background-image: radial-gradient(circle, #eaf3df 0%, #fcfcfc 100%);
+    border: 1px solid #ac446d;
 
     border-radius: 3px;
     padding: 5px 2px;
-    color: #333232;
+    color: #ac446d;
+    border-radius: 5px;
 
     font-family: Basiic;
     font-size: 1.25rem;
 }
+input::placeholder {
+    color: #e0a694;
+}
+input:focus {
+    outline: 2px solid #c7f68d;
+}
+textarea:focus {
+    outline: 2px solid #c7f68d;
+}
+textarea::placeholder{
+    color: #e0a694;
+}
+textarea {
+    margin-top: 6px;
+}
 body {
-    color:#e9724c;
+    color:#ffd0cc;
     font-family: Darumadrop One;
     font-size: 1.5rem;
 }
 button {
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
     background-color:#eaf3df;
     color: #e9724c;
     font-family: Basiic;
     font-size: 1.25rem;
+    font-family: Darumadrop One;
+    text-align: center;
+    border: 1px solid #ac446d;
+    border-radius: 5px;
+
+    transition: transform 0.3s ease;
+    
+}
+button:hover {
+    transform: scale(1.05);
+    background-color:#f5fdeb;
+    color: #ff7b4f;
+    border: 1px solid #ac446d;
+}
+fieldset {
+    background-color: #e77567;
+    border: 3px solid #ac446d;
+    border-radius: 5px;
 }
