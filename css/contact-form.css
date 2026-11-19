@@ -34,7 +34,6 @@
     min-width: 0;
 }
 
-
 .info input {
     width: 100%;
 } 
@@ -83,7 +82,7 @@ body {
 .md-options {
     display: flex;
     gap: 6px;
-    margin: 5px 0 8px 0;
+    margin: 5px 0 12px 0;
 }
 .mdbutton, .emoji-button {
     width: auto;
