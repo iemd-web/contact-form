@@ -33,9 +33,7 @@
     flex: 1;
     min-width: 0;
 }
-.inside-form fieldset{
-    padding: 6px 12px 12px 12px;
-}
+
 
 .info input {
     width: 100%;
@@ -81,6 +79,17 @@ body {
     color: #573d1c;
     font-family: 'Gaegu';
     font-size: 1.5rem;
+}
+.md-options {
+    display: flex;
+    gap: 6px;
+    margin: 5px 0 8px 0;
+}
+.mdbutton, .emoji-button {
+    width: auto;
+    flex: 0 0 auto;
+    padding: 0.25rem 0.5rem;
+    font: inherit;
 }
 button {
     padding-bottom: 8px;
