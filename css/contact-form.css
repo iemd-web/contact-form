@@ -20,69 +20,101 @@
     src: url('/contact-form/css/fonts/HachiMaruPop/HachiMaruPop-Regular.ttf') format('truetype');
 }
 /*---------- coding the actual form format ----------*/
-input {
-    display: inline-block;
+* {
+    box-sizing: border-box;
 }
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw; 
+    width: 100%;
+}
+.info > div {
+    flex: 1;
+    min-width: 0;
+}
+.inside-form fieldset{
+    padding: 6px 12px 12px 12px;
+}
+
+.info input {
+    width: 100%;
+} 
 input, textarea {
-    width:100%;
+    display: inline-block;
+    width: 100%;
     resize: vertical;
 
-    background-image: radial-gradient(circle, #eaf3df 0%, #fcfcfc 100%);
-    border: 1px solid #ac446d;
+    background-image: radial-gradient(circle, #f0f6DD 0%, #fcfcfc 200%);
+    border: 1.5px solid #573d1c;
 
-    border-radius: 3px;
     padding: 5px 2px;
-    color: #ac446d;
-    border-radius: 5px;
+    color: #573d1c;
 
-    font-family: Basiic;
+    font-family: 'Gaegu';
     font-size: 1.25rem;
-}
-input::placeholder {
-    color: #e0a694;
+    text-indent: 5px;
+} 
+.name::placeholder, .email::placeholder {
+    color: #99a083;
+    overflow-y: scroll;
+
+    text-indent: 5px;
 }
 input:focus {
-    outline: 2px solid #c7f68d;
+    outline: 1px solid #52489c;
 }
 textarea:focus {
-    outline: 2px solid #c7f68d;
+    outline: 1px solid #52489c;
 }
 textarea::placeholder{
-    color: #e0a694;
+    color: #99a083;
 }
 textarea {
+    display: block;
     margin-top: 6px;
+    width:100%;
+    box-sizing: border-box;
+    padding:4px
 }
 body {
-    color:#ffd0cc;
-    font-family: Darumadrop One;
+    color: #573d1c;
+    font-family: 'Gaegu';
     font-size: 1.5rem;
 }
 button {
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
     padding-bottom: 8px;
-    background-color:#eaf3df;
-    color: #e9724c;
+    padding-top: 8px;
+    text-align: center;
+    background-color:#6c4f2c;
+    color: #f0f6DD;
     font-family: Basiic;
     font-size: 1.25rem;
-    font-family: Darumadrop One;
-    text-align: center;
-    border: 1px solid #ac446d;
-    border-radius: 5px;
+    font-family: 'Gaegu';
+    border: 1.5px solid #573d1c;
 
-    transition: transform 0.3s ease;
-    
+    width:100%;
+
+    transition: transform 0.3s ease;  
 }
 button:hover {
-    transform: scale(1.05);
-    background-color:#f5fdeb;
-    color: #ff7b4f;
-    border: 1px solid #ac446d;
+    transform: scaleX(1.02);
+    background-color:#573d1c;
+    color: #f0f6DD;
+    border: 1px solid #573d1c;
 }
 fieldset {
-    background-color: #e77567;
-    border: 3px solid #ac446d;
-    border-radius: 5px;
+    background-color: #d999b7;
+    border: 1.5px solid #573d1c;
+    overflow: hidden;
+}
+/*-------------- responsive -------------*/
+@media (max-width: 600px) {
+    .info {
+        flex-direction: column; 
+        gap: 12px;
+    }
+    .info > div {
+        width: 100%;
+    }
 }

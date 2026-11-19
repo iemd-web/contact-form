@@ -8,26 +8,26 @@
 </head>
 <body>
   <form method="POST" action="https://formspree.io/f/mbgjlnzl">
-    <fieldset>
-      <div>
-        <label for="name">Your Name (Optional):</label>
-        <br>
-        <input type="text" name="name" id="name" placeholder="Rick Deckard">
-        <br>
-        <br>
+    <fieldset class="inside-form">
+      <div class="info">
+        <div>
+          <label for="name">Name</label>
+          <br>
+          <input type="text" name="name" class="name" placeholder="Rick Deckard">
+          <br>
+        </div>
+        <div>
+          <label for="email">Email (required)</label>
+          <br>
+          <input type="email" name="email" class="email" placeholder="R.Deckard@gmail.com" required>
+          <br>
+          <br>
+        </div>
       </div>
       <div>
-        <label for="email">Your Email Address (Required):</label>
-        <br>
-        <input type="email" name="email" id="email" placeholder="R.Deckard@gmail.com" required>
-        <br>
-        <br>
-      </div>
-      <div>
-        <label for="message">Your Message (Required):</label>
+        <label for="message">Your Message (required)</label>
         <br>
         <textarea rows="5" name="message" id="message" placeholder="Start typing..." required></textarea>
-        <br>
         <br>
       </div>
       <button type="submit">Send Message</button>
